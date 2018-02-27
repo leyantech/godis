@@ -1,0 +1,34 @@
+hash: 7a75adc4ad809efabb6f8c29728c9a9eb947bfc1d84624edc5aeadec4b3850dc
+updated: 2017-08-28T16:11:14.385668932+08:00
+imports:
+- name: github.com/go-redis/redis
+  version: 19c1c2272e00c1aaa903cf574c746cd449f9cd3c
+  subpackages:
+  - internal
+  - internal/consistenthash
+  - internal/hashtag
+  - internal/pool
+  - internal/proto
+- name: github.com/pkg/errors
+  version: 645ef00459ed84a119197bfb8d8205042c6df63d
+- name: github.com/samuel/go-zookeeper
+  version: e6b59f6144beb8570562539c1898a0b1fea34b41
+  subpackages:
+  - zk
+testImports:
+- name: github.com/alicebob/miniredis
+  version: 995ba133bd8fe5dae5a34732bd99f558b0b60e1a
+  subpackages:
+  - server
+- name: github.com/davecgh/go-spew
+  version: 6d212800a42e8ab5c146b8ace3490ee17e5225f9
+  subpackages:
+  - spew
+- name: github.com/pmezard/go-difflib
+  version: d8ed2627bdf02c080bf22230dbb337003b7aba2d
+  subpackages:
+  - difflib
+- name: github.com/stretchr/testify
+  version: 69483b4bd14f5845b5a1e55bca19e954e827f1d0
+  subpackages:
+  - assert

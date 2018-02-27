@@ -1,0 +1,16 @@
+package: github.com/leyantech/godis
+import:
+- package: github.com/go-redis/redis
+  version: ^6.5.7
+- package: github.com/pkg/errors
+  version: ^0.8.0
+- package: github.com/samuel/go-zookeeper
+  subpackages:
+  - zk
+testImport:
+- package: github.com/alicebob/miniredis
+  version: ^2.1.0
+- package: github.com/stretchr/testify
+  version: ^1.1.4
+  subpackages:
+  - assert
