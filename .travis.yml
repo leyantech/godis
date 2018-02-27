@@ -1,0 +1,19 @@
+language: go
+
+go:
+  - 1.9
+
+before_install:
+  - curl https://glide.sh/get | sh
+  - wget http://www.eu.apache.org/dist/zookeeper/zookeeper-3.4.10/zookeeper-3.4.10.tar.gz
+  - tar xf zookeeper-3.4.10.tar.gz
+  - mv zookeeper-3.4.10/conf/zoo_sample.cfg zookeeper-3.4.10/conf/zoo.cfg
+  - ./zookeeper-3.4.10/bin/zkServer.sh start
+
+install:
+  - glide up
+
+script:
+  - go test -race
+
+sudo: false
